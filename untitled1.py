@@ -91,6 +91,7 @@ def main():
                     text = data["text"] 
                     user=data["user"]
                     place = data["place"]
+                    print(data["place"])
                     if place is None:
                         continue
                     t = {
@@ -98,12 +99,6 @@ def main():
                         "text": text,
                         "location": user["location"],
                         "place":place["full_name"],
-                        "in_reply_to_screen_name": data["in_reply_to_screen_name"],
-                        "retweet_count": data["retweet_count"],
-                        "favorite_count": data["favorite_count"],
-                        "source": get_source(data),
-                        "id_str": data["id_str"],
-                        "is_retweet": is_retweet(data),
                         "clean-text": clean_tweet(text)
                     }
                     json.dump(t, outfile)
@@ -113,16 +108,15 @@ def main():
         
     f = csv.writer(open('{}.csv'.format(output_file_noformat), 'w'))
     print('creating CSV version of minimized json master file') 
-    fields = ["favorite_count", "source", "text","clean-text", "location","place" ,"in_reply_to_screen_name", "is_retweet", "created_at", "retweet_count", "id_str"]                
+    fields = ["created_at","text","clean-text", "location","place"]                
     f.writerow(fields)  
     print(outfile)
     with open(output_file_short) as master_file:
         for tweet in master_file:
             data = json.loads(tweet)            
-            f.writerow([data["favorite_count"], data["source"], data["text"].encode('utf-8'),
+            f.writerow([ data["created_at"],data["text"].encode('utf-8'),
                         data["clean-text"],
-                        data["location"],data["place"], data["in_reply_to_screen_name"], 
-                        data["is_retweet"], data["created_at"], data["retweet_count"],     data["id_str"].encode('utf-8')])
+                        data["location"],data["place"]])
     
     print("done")
 
