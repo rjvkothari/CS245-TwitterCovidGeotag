@@ -42,6 +42,9 @@ test_df = pd.DataFrame(test_data, columns=['username', 'tweets', 'state', 'regio
 train_df = pd.DataFrame(train_data, columns=['username', 'tweets', 'state', 'region', 'state_name', 'region_name'])
 
 print("Saving all as CSV")
+print("Training set size:", len(train_df))
+print("Testing set size:", len(test_df))
+print("Dev set size:", len(dev_df))
 
 train_df.to_csv("TRAININGDATA.csv")
 test_df.to_csv("TESTINGDATA.csv")
