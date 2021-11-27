@@ -1,22 +1,10 @@
 import io
-import math
 import pickle
-import re
 import sys
-import time
 import os
 from os import path, makedirs
-
-os.environ['SM_FRAMEWORK'] = 'tf.keras'
-import segmentation_models as sm
-
-sm.set_framework('tf.keras')
-
-
 from tensorflow import keras
 import pandas as pd
-from nltk.stem import PorterStemmer
-from nltk.tokenize import word_tokenize
 
 sys.path.insert(0, path.abspath('../../'))
 
