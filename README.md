@@ -8,11 +8,18 @@ Currently set to use only 100 at a time. Line 285 in Get_metadata.py - switch 1 
 ## Datasets
 
 **CMU Data**
-| | # Users | # Tweets |
-|-|-|-|
-| Train | 5,685 | 219,608 |
-| Dev | 1,895 | 74,347 |
-| Test | 1,895 | 74,192 |
+| | # Users | # Tweets | # Tweets/User |
+|-|-|-|-|
+| Train | 5,685 | 219,608 | 38.63 |
+| Dev | 1,895 | 74,347 | 39.23 |
+| Test | 1,895 | 74,192 | 39.15 |
+
+**NA Data**
+| | # Users | # Tweets | # Tweets/User |
+|-|-|-|-|
+| Train | 410,336 | 34,460,594 | 83.98 |
+| Dev | 9.533 | 788,860 | 82.58 |
+| Test | 9.546 | 818,596 | 85.75 |
 
 ## Results
 
