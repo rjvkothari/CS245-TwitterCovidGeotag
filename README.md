@@ -40,9 +40,9 @@ Currently set to use only 100 at a time. Line 285 in Get_metadata.py - switch 1 
 | Model Name | LTC | PFC |
 |---|---|---|
 | CNN |  |  |
-| RNN |  |   |
-| Fasttext |  |   |
-| BiLSTM-Relation |  |   |
+| RNN |  |  |
+| Fasttext | 6.84 | 10.24 |
+| BiLSTM-Relation |  |  |
 
 **Expt Setup 1:** Train on CMU data. Testing on COVID-related datasets. Evaluation metric is accuracy (reported in percentage).
 
