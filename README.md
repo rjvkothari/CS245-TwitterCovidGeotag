@@ -21,6 +21,18 @@ Currently set to use only 100 at a time. Line 285 in Get_metadata.py - switch 1 
 | Dev | 9.533 | 788,860 | 82.58 |
 | Test | 9.546 | 818,596 | 85.75 |
 
+**Partially Filtered COVID data**
+| | # Users | # Tweets | # Tweets/User |
+|-|-|-|-|
+| Train | 2,000 | 97,421 | 48.71 |
+| Dev | 1,000 | 48,684 | 48.68 |
+| Test | 1,636 | 79,405 | 48.54 |
+
+**Low-Tweet COVID data**
+| | # Users | # Tweets | # Tweets/User |
+|-|-|-|-|
+| Test | 1,257 | 12.557 | 9.99 |
+
 ## Results
 
 **Expt Setup:** Train on CMU data. Testing on COVID-related datasets. Evaluation metric is accuracy (reported in percentage).
