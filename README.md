@@ -58,6 +58,6 @@ Currently set to use only 100 at a time. Line 285 in Get_metadata.py - switch 1 
 | Model Name | LTC | PFC |
 |---|---|---|
 | CNN | 7.7 | 4.45 |
-| RNN |  |   |
-| Fasttext |  |   |
-| BiLSTM-Relation |  |   |
+| RNN | 13.36 | 9.19 |
+| Fasttext |  |  |
+| BiLSTM-Relation |  |  |
