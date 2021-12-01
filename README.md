@@ -43,21 +43,24 @@ Currently set to use only 100 at a time. Line 285 in Get_metadata.py - switch 1 
 | RNN |  |  |
 | Fasttext | 6.84 | 10.24 |
 | BiLSTM-Relation |  |  |
+| Stacked LSTM | 7.8 | 7.1 |
 
 **Expt Setup 1:** Train on CMU data. Testing on COVID-related datasets. Evaluation metric is accuracy (reported in percentage).
 
 | Model Name | LTC | PFC |
 |---|---|---|
-| CNN | 9.3 | 5.53 |
-| RNN | 6.88 | 10.1  |
+| CNN | 9.3 | 7.53 |
+| RNN | 8.88 | 10.1  |
 | Fasttext | 6.88 | 4.57 |
-| BiLSTM-Relation | 6.88 | 6.53 |
+| BiLSTM-Relation | 6.95 | 6.53 |
+| Stacked LSTM | 7.31 | 6.72 |
 
 **Expt Setup 2:** Train on NA data. Testing on COVID-related datasets. Evaluation metric is accuracy (reported in percentage).
 
 | Model Name | LTC | PFC |
 |---|---|---|
-| CNN | 7.7 | 4.45 |
+| CNN | 7.7 | 8.45 |
 | RNN | 13.36 | 9.19 |
 | Fasttext |  |  |
 | BiLSTM-Relation |  |  |
+| Stacked LSTM |  | 8.7 |
