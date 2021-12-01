@@ -39,7 +39,7 @@ Currently set to use only 100 at a time. Line 285 in Get_metadata.py - switch 1 
 
 | Model Name | LTC | PFC |
 |---|---|---|
-| CNN |  |  |
+| CNN | 7.7 | 6.78 |
 | RNN |  |  |
 | Fasttext | 6.84 | 10.24 |
 | BiLSTM-Relation |  |  |
