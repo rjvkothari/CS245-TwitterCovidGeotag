@@ -48,10 +48,10 @@ Currently set to use only 100 at a time. Line 285 in Get_metadata.py - switch 1 
 
 | Model Name | LTC | PFC |
 |---|---|---|
-| CNN | 9.3 |  |
-| RNN | 6.88 |   |
-| Fasttext | 6.88 |   |
-| BiLSTM-Relation | 6.88 |   |
+| CNN | 9.3 | 5.53 |
+| RNN | 6.88 | 10.1  |
+| Fasttext | 6.88 | 4.57 |
+| BiLSTM-Relation | 6.88 | 6.53 |
 
 **Expt Setup 2:** Train on NA data. Testing on COVID-related datasets. Evaluation metric is accuracy (reported in percentage).
 
